@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* copy style  */
+.display-flex{
+    display: flex;
+}
+.bg-color{
+    background-color: rgb(254, 163, 1);;
+}
+/* part1  nav */
+#nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.list-item,li{
+    gap: 32px;
+    list-style:none;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.btn1{
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+}
+.school-name{
+    margin-left: 11px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 32px;
+    font-family: Quicksand;
+}
+.color a{
+    visibility: hidden;
+}
+/* part2 */
+.main-content{
+    background-image:url("../assets/bg.png") ;
+    background-repeat: no-repeat;
+    border-bottom: 1px dashed rgba(58, 54, 54, 0.286);
+}
+.text-context{
+    flex-direction: column;
+    width: 540px;
+    height: 331px;
+}
+.main-content {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.Empowering-title{
+    font-family: Quicksand;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+}
+.sum-text{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0px;
+}
+.enroll-btn{
+    width: 197px;
+    height: 57px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 20px 0px ;
+    padding: 10px;
+}
+/* part3 */
+.img-content1,p,h1{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+}
+.img-content1 {
+    
+    padding: 3px auto;
+}
+.img-footer{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+/* m */
+@media screen and (max-width: 576px) {
+    .btn1,.list-item,.school-name{
+        visibility: hidden;
+    }
+  .color a{
+    visibility: visible;
+     margin-left: 450px;
+     bottom: 560px;
+     position: absolute;
+     font-size: 20px;
+     width: 20px;
+    }
+    
+    .header{
+        border-bottom: 1px solid orange;
+       padding: 10px;
+    }
+/* part2 */
+    .main-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-align{
+        text-align: center;
+    }
+    .sum-text{
+        width: 380px;
+    }
+    .Empowering-title{
+        font-family: Quicksand;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px; 
+    }
+    .text-context{
+        align-items: center;
+    }
+    
+}
